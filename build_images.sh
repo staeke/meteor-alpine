@@ -7,13 +7,13 @@
 # 1.7.0.2/8.11.3/8.11.3
 # 1.7.0.3/8.11.3/8.11.3
 # 1.7.0.4/8.11.3/8.11.3
-# 1.7.0.5/8.11.3/8.11.3
+# 1.7.0.5/8.11.3/8.11.4
 
 set -e
 
-export METEOR_VERSION=1.7.0.4
-export METEOR_NODE_VERSION=8.11.3 # For some reason this sometimes differs from NODE_VERSION, and in weird ways
-export NODE_VERSION=8.11.3
+export METEOR_VERSION=1.7.0.5
+export METEOR_NODE_VERSION=8.11.4 # For some reason this sometimes differs from NODE_VERSION, and in weird ways
+export NODE_VERSION=8.11.4
 docker build -f meteor-alpine.Dockerfile \
     --build-arg METEOR_VERSION=${METEOR_VERSION} \
     --build-arg NODE_VERSION=${NODE_VERSION} \
