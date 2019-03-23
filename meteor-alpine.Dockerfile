@@ -11,7 +11,7 @@ ENV METEOR_ALLOW_SUPERUSER=1
 RUN adduser -D -u 1001 -h /home/meteor meteor
 
 # bash is needed by many meteor commands - leave on machine
-RUN apk add --update --no-cache bash git
+RUN apk add --update --no-cache bash
 
 # 1. Install temp packages needed for build
 # 2. Install meteor for user meteor (with launcher creation)
@@ -35,7 +35,9 @@ RUN export TEMP_PACKAGES="alpine-sdk libc6-compat python linux-headers" && \
     ln -s $(which node) && \
     ln -s $(which npm) && \
     ln -s $(which npx) && \
-    cd ../lib && \
+    cd ../mongodb/bin && \
+    rm mongo mongod && \
+    cd ../../lib && \
     sed -i '/sysctl\.h/d' node_modules/netroute/src/netroute.cc && \
     npm rebuild && \
     cd ~ && \
