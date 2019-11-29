@@ -29,5 +29,6 @@ build_images() {
 #export METEOR_VERSION=1.7.0.5; export METEOR_NODE_VERSION=8.11.3; export NODE_VERSION=8.11.4; build_images
 #export METEOR_VERSION=1.8; export METEOR_NODE_VERSION=8.11.4.5; export NODE_VERSION=8.11.4; build_images
 #export METEOR_VERSION=1.8.0.1; export METEOR_NODE_VERSION=8.11.4.7; export NODE_VERSION=8.11.4; build_images
-export METEOR_VERSION=1.8.0.2; export METEOR_NODE_VERSION=8.11.4.8; export NODE_VERSION=8.11.4; build_images
+# export METEOR_VERSION=1.8.0.2; export METEOR_NODE_VERSION=8.11.4.8; export NODE_VERSION=8.11.4; build_images
+export METEOR_VERSION=1.8.1; export METEOR_NODE_VERSION=8.15.1.1; export NODE_VERSION=8.15.1; build_images
 
